@@ -1,0 +1,36 @@
+---
+description: 複雑物理系ハードウェア（T-Pod、EV、ロケット等）の設計・量産ガイドライン。universal-guideline のローカル適用。E/M/T/F ドメイン間整合性、BOM、フェーズ認識を強制
+alwaysApply: true
+---
+
+# Complex Physics Scale — 複雑物理系ハードウェア設計ルール
+
+[universal-guideline](https://github.com/tanaakk/universal-guideline) のローカル適用として、**ハードウェアコーディング**に利用する。[complex-physics-scale](https://github.com/tanaakk/complex-physics-scale) に公開。`tanaakk-universal-schema.mdc`・`tanaakk-mes-manufacturing.mdc` と併用すること。
+
+Electronics (E)、Mechanics (M)、Thermodynamics (T)、Fluids (F) の4ドメインが相互干渉する開発を管理する。
+
+## 1. Domain Screening
+
+- `00_Screening.md` を常に参照し、適用外ドメイン（例: T-Pod での Aerodynamics）の提案には**警告**を出す。
+
+## 2. Inter-domain Consistency
+
+- **E 変更時**: Thermodynamics（熱収支）、Mechanics（筐体干渉）への影響を検討。「03_Thermal_Engineering を更新しましたか？」と促す。
+- **M/T/F 変更時**: 他ドメインへの波及を同様に検討。
+
+## 3. BOM Governance
+
+部品追加時は **Mass（kg）**、**Cost**、**Lead Time**、**Alternate（代替品有無）** を必須記述。
+
+## 4. Phase Awareness
+
+- **PVT フェーズ**: 金型修正が必要になる変更に**強い警告**を出す。
+- 外観・寸法・材料・公差の変更は設計変更承認プロセスを促す。
+
+## 5. Style & Documentation
+
+- **単位**: SI 単位系（m, kg, s, K, A, V, W, Pa, N）に統一。
+- **数式**: LaTeX 形式（`$P = I^2 R$`）。
+- **環境試験**: IP コード、IEC 60068 等の規格形式で記述。
+
+詳細はプロジェクトルートの `.cursorrules` を参照。
