@@ -14,6 +14,7 @@ A comprehensive framework for scaling hardware that integrates complex physical 
 | `.cursorrules` | Cursor 用メインルール（全ファイル適用） |
 | `.cursor/rules/tanaakk-complex-physics-scale.mdc` | ルール要約（alwaysApply） |
 | `00_Screening.md` | プロジェクト適用物理ドメイン定義テンプレート |
+| `01_Hardware_Mass_Production_Model.md` | PLOG / P&L / Competitive Margin / DFP の量産モデル体系 |
 
 ## 使い方
 

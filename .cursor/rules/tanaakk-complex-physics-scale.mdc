@@ -1,5 +1,5 @@
 ---
-description: 複雑物理系ハードウェア（T-Pod、EV、ロケット等）の設計・量産ガイドライン。universal-guideline のローカル適用。E/M/T/F ドメイン間整合性、BOM、フェーズ認識を強制
+description: 複雑物理系ハードウェア（車載 IoT、電動モビリティ、航空宇宙等）の設計・量産ガイドライン。universal-guideline のローカル適用。E/M/T/F ドメイン間整合性、BOM、RFQ-to-Design 移行、フェーズ認識を強制
 alwaysApply: true
 ---
 
@@ -11,7 +11,7 @@ Electronics (E)、Mechanics (M)、Thermodynamics (T)、Fluids (F) の4ドメイ�
 
 ## 1. Domain Screening
 
-- `00_Screening.md` を常に参照し、適用外ドメイン（例: T-Pod での Aerodynamics）の提案には**警告**を出す。
+- `00_Screening.md` を常に参照し、適用外ドメイン（例: 車載 IoT での Aerodynamics）の提案には**警告**を出す。
 
 ## 2. Inter-domain Consistency
 
@@ -20,14 +20,18 @@ Electronics (E)、Mechanics (M)、Thermodynamics (T)、Fluids (F) の4ドメイ�
 
 ## 3. BOM Governance
 
-部品追加時は **Mass（kg）**、**Cost**、**Lead Time**、**Alternate（代替品有無）** を必須記述。
+部品追加時は **Mass（kg）**、**Cost**、**Lead Time**、**Alternate（代替品有無）** を必須記述。推奨: Category、主要スペック/選定理由、参考調達先。
 
-## 4. Phase Awareness
+## 4. RFQ-to-Design Gap
+
+見積・概要設計がある場合、**詳細設計への移行**を確認: 外装・内部配置・配線・汎用性・可動検証。車載 IoT の場合は寸法拘束・熱環境・待機時間・耐熱素材を検討。
+
+## 5. Phase Awareness
 
 - **PVT フェーズ**: 金型修正が必要になる変更に**強い警告**を出す。
 - 外観・寸法・材料・公差の変更は設計変更承認プロセスを促す。
 
-## 5. Style & Documentation
+## 6. Style & Documentation
 
 - **単位**: SI 単位系（m, kg, s, K, A, V, W, Pa, N）に統一。
 - **数式**: LaTeX 形式（`$P = I^2 R$`）。
