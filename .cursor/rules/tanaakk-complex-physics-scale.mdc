@@ -26,6 +26,10 @@ Electronics (E)、Mechanics (M)、Thermodynamics (T)、Fluids (F) の4ドメイ�
 
 見積・概要設計がある場合、**詳細設計への移行**を確認: 外装・内部配置・配線・汎用性・可動検証。車載 IoT の場合は寸法拘束・熱環境・待機時間・耐熱素材を検討。
 
+## 4.5 Regulatory Compliance（検品後・出荷前）
+
+出荷対象地域（US / Japan / Germany）に応じ、`02_Regulatory_Compliance_US_JP_DE.md` で電波法・通信法・電気用品・RoHS 等の法令適合を最終確認。
+
 ## 5. Phase Awareness
 
 - **PVT フェーズ**: 金型修正が必要になる変更に**強い警告**を出す。

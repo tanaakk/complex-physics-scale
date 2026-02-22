@@ -196,6 +196,7 @@
 - [ ] 現在のフェーズ（EVT/DVT/PVT）を考慮し、適切な警告を出したか
 - [ ] 単位は SI 系で統一し、数式は LaTeX で記述したか
 - [ ] 環境試験基準の記述形式に従ったか
+- [ ] 出荷対象地域（US / Japan / Germany）の法令適合（電波法・通信法・電気用品等）を確認したか
 
 ---
 
@@ -203,4 +204,5 @@
 
 - `00_Screening.md` — プロジェクトの適用物理ドメイン定義（必須参照）
 - `01_Hardware_Mass_Production_Model.md` — PLOG / P&L / Competitive Margin / DFP の量産モデル体系
+- `02_Regulatory_Compliance_US_JP_DE.md` — 検品後・出荷前の法令適合レイヤー（US / Japan / Germany）
 - `03_Thermal_Engineering/` — 熱設計・熱収支関連ドキュメント
