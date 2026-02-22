@@ -21,14 +21,29 @@
 
 ---
 
-## 1. Domain Screening Rule（ドメイン適合性チェック）
+## 1. Screening Rule（スクリーニング順序）
 
-**必須**: コード・ドキュメント・設計変更を提案する前に、`00_Screening.md` の内容を確認すること。
+**必須**: コード・ドキュメント・設計変更を提案する前に、以下の**3 段階を順に**実行すること。
 
-- `00_Screening.md` が存在する場合、プロジェクトが「どの物理ドメイン」に属しているかを必ず参照する。
+### 1.1 力学スクリーニング（第 1 段階）
+
+- `00_Screening.md` の適用ドメイン（E/M/T/F）を参照する。
 - **適用外ドメインの提案に対しては警告を出す**。
   - 例: 車載 IoT プロジェクトで Aerodynamics（空力）のコードやドキュメントが提案された場合 → 「本プロジェクトの 00_Screening.md によると Aerodynamics は適用外です。この変更は意図的ですか？」と警告する。
 - ドメインの追加・変更が必要な場合は、`00_Screening.md` の更新を促す。
+
+### 1.2 Cross Industry Screening（第 2 段階）
+
+- `00_Screening.md` § Cross Industry Screening で産業種別（EV / スマートフォン / ロケット等）を特定する。
+- 産業別の追加ドメイン・追加要件を適用する。
+
+### 1.3 法令・国際規格の参照（第 3 段階）
+
+- 力学スクリーニングおよび Cross Industry Screening 完了後、`02_Regulatory_Compliance_US_JP_DE.md` および産業別の追加法令・国際規格を参照する。
+
+### 1.4 設計依存カスケード
+
+力学 + Industry が決まれば **用途・BOM** が決まり、用途・BOM が決まれば **テストケース** が決まり、テストケースが決まれば **テスト機器** が決まり、**流通予定国** を決めた上で **出荷前許認可** を取得する。この順序を逆にしないこと。
 
 ---
 
@@ -188,7 +203,7 @@
 
 コード・ドキュメント・設計を生成・修正する際、以下を確認すること：
 
-- [ ] `00_Screening.md` を参照し、適用ドメインに適合しているか
+- [ ] 力学スクリーニング（適用ドメイン）→ Cross Industry Screening（産業種別）→ 法令・国際規格の順で確認したか
 - [ ] 他ドメイン（E/M/T/F）への影響を検討したか
 - [ ] 部品追加時、Mass / Cost / Lead Time / Alternate を記述したか
 - [ ] 見積・概要設計がある場合、詳細設計への移行（外装・内部配置・配線・汎用性・可動検証）を確認したか
@@ -197,12 +212,14 @@
 - [ ] 単位は SI 系で統一し、数式は LaTeX で記述したか
 - [ ] 環境試験基準の記述形式に従ったか
 - [ ] 出荷対象地域（US / Japan / Germany）の法令適合（電波法・通信法・電気用品等）を確認したか
+- [ ] 力学・用途・BOM・テストケース・テスト計測器・許認可の定義完了時、`03_Verification_Checklist.md` でガイドライン有効性を検証したか
 
 ---
 
 ## 参照ファイル
 
-- `00_Screening.md` — プロジェクトの適用物理ドメイン定義（必須参照）
+- `00_Screening.md` — 力学スクリーニング + Cross Industry Screening（必須参照）
 - `01_Hardware_Mass_Production_Model.md` — PLOG / P&L / Competitive Margin / DFP の量産モデル体系
 - `02_Regulatory_Compliance_US_JP_DE.md` — 検品後・出荷前の法令適合レイヤー（US / Japan / Germany）
+- `03_Verification_Checklist.md` — 力学・用途・BOM・テストケース・テスト計測器・許認可の定義完了検証
 - `03_Thermal_Engineering/` — 熱設計・熱収支関連ドキュメント

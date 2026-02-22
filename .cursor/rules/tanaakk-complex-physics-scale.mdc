@@ -9,9 +9,13 @@ alwaysApply: true
 
 Electronics (E)、Mechanics (M)、Thermodynamics (T)、Fluids (F) の4ドメインが相互干渉する開発を管理する。
 
-## 1. Domain Screening
+## 1. Screening（3 段階・順序厳守）
 
-- `00_Screening.md` を常に参照し、適用外ドメイン（例: 車載 IoT での Aerodynamics）の提案には**警告**を出す。
+1. **力学スクリーニング**: `00_Screening.md` で適用ドメイン（E/M/T/F）を確定。適用外ドメインには**警告**。
+2. **Cross Industry Screening**: 産業種別（EV / スマートフォン / ロケット等）を特定し、産業別追加要件を適用。
+3. **法令・国際規格**: 上記完了後に `02_Regulatory_Compliance_US_JP_DE.md` 等を参照。
+
+**設計依存カスケード**: 力学 + Industry → 用途・BOM → テストケース → テスト機器 → 流通予定国 → 出荷前許認可。順序を逆にしない。
 
 ## 2. Inter-domain Consistency
 

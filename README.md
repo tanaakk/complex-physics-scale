@@ -13,9 +13,10 @@ A comprehensive framework for scaling hardware that integrates complex physical 
 |---------|------|
 | `.cursorrules` | Cursor 用メインルール（全ファイル適用） |
 | `.cursor/rules/tanaakk-complex-physics-scale.mdc` | ルール要約（alwaysApply） |
-| `00_Screening.md` | プロジェクト適用物理ドメイン定義テンプレート |
+| `00_Screening.md` | 力学スクリーニング + Cross Industry Screening（3 段階フロー） |
 | `01_Hardware_Mass_Production_Model.md` | PLOG / P&L / Competitive Margin / DFP の量産モデル体系 |
 | `02_Regulatory_Compliance_US_JP_DE.md` | 検品後・出荷前の法令適合レイヤー（US / Japan / Germany） |
+| `03_Verification_Checklist.md` | 力学・用途・BOM・テストケース・テスト計測器・許認可の定義完了検証 |
 
 ## 使い方
 
