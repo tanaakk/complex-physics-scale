@@ -14,6 +14,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 SOURCE_04="$REPO_ROOT/04_Repository_Relationships.md"
 SOURCE_05="$REPO_ROOT/05_Folder_Structure_Convention.md"
+SOURCE_06="$REPO_ROOT/06_Universal_Schema_Concept.md"
 
 TARGET_REPOS=(
   "universal-guideline"
@@ -68,6 +69,7 @@ fi
 echo "Syncing from complex-physics-scale ($VERSION) to:"
 echo "  - 04_Repository_Relationships.md"
 [[ -f "$SOURCE_05" ]] && echo "  - 05_Folder_Structure_Convention.md"
+[[ -f "$SOURCE_06" ]] && echo "  - 06_Universal_Schema_Concept.md"
 echo ""
 
 COPIED=0
@@ -78,6 +80,9 @@ for repo in "${TARGET_REPOS[@]}"; do
     echo "$CONTENT" > "$TARGET_DIR/04_Repository_Relationships.md"
     if [[ -f "$SOURCE_05" ]]; then
       cp "$SOURCE_05" "$TARGET_DIR/05_Folder_Structure_Convention.md"
+    fi
+    if [[ -f "$SOURCE_06" ]]; then
+      cp "$SOURCE_06" "$TARGET_DIR/06_Universal_Schema_Concept.md"
     fi
     echo "  ✓ $repo"
     ((COPIED++)) || true
@@ -94,6 +99,6 @@ echo "Done. Copied to $COPIED repositories."
 echo "Version: $VERSION | Date: $DATE"
 echo ""
 echo "Next steps for each target repo:"
-echo "  git add 04_Repository_Relationships.md 05_Folder_Structure_Convention.md"
+echo "  git add 04_Repository_Relationships.md 05_Folder_Structure_Convention.md 06_Universal_Schema_Concept.md"
 echo "  git commit -m \"docs: sync 04/05 from complex-physics-scale $VERSION (version rules)\""
 echo "  git push"

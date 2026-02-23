@@ -42,6 +42,7 @@ for repo in "${REPOS[@]}"; do
   if git status --porcelain | grep -q .; then
     git add 04_Repository_Relationships.md 2>/dev/null || true
     git add 05_Folder_Structure_Convention.md 2>/dev/null || true
+    git add 06_Universal_Schema_Concept.md 2>/dev/null || true
     git add scripts/sync-repository-relationships.sh 2>/dev/null || true
     git add scripts/commit-sync-all.sh 2>/dev/null || true
     git commit -m "$MSG" || true
