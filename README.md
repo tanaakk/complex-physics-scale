@@ -12,7 +12,7 @@ A comprehensive framework for scaling hardware that integrates complex physical 
 
 | ファイル | 説明 |
 |---------|------|
-| `00_Meta_Framework.md` | 5 層メタフレームワーク（空間基底→散逸機構→本フレームワーク→残存・拡張→特異点突破） |
+| `00_Meta_Framework.md` | 5 層メタフレームワーク（空間基底→散逸機構→本フレームワーク→残存・拡張→特異点突破）、モデルの利用方法（計算資源の節約・探索しない空間の定義） |
 | `.cursorrules` | Cursor 用メインルール（全ファイル適用） |
 | `.cursor/rules/tanaakk-complex-physics-scale.mdc` | ルール要約（alwaysApply） |
 | `00_Screening.md` | 力学スクリーニング + Cross Industry Screening（3 段階フロー） |
