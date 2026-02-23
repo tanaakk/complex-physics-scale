@@ -4,6 +4,7 @@
 
 ## 位置づけ・参照
 
+- **メタフレームワーク**: 5 層構造の第 3 層（系の成立パターンのスクリーニング）に位置。`00_Meta_Framework.md` 参照。
 - **ベース**: [universal-guideline](https://github.com/tanaakk/universal-guideline) のローカル適用として、**ハードウェアコーディング**に利用する。
 - **リポジトリ**: [complex-physics-scale](https://github.com/tanaakk/complex-physics-scale) にプッシュ・公開される。
 - **併用**: `tanaakk-universal-schema.mdc`（UUID v4、単位、通貨等）および `tanaakk-mes-manufacturing.mdc`（製造・BOM 連携）と併用すること。データ設計・API 連携は universal-guideline に準拠する。
@@ -218,6 +219,7 @@
 
 ## 参照ファイル
 
+- `00_Meta_Framework.md` — 5 層メタフレームワーク（本フレームワークの上位階層）
 - `00_Screening.md` — 力学スクリーニング + Cross Industry Screening（必須参照）
 - `01_Hardware_Mass_Production_Model.md` — PLOG / P&L / Competitive Margin / DFP の量産モデル体系
 - `02_Regulatory_Compliance_US_JP_DE.md` — 検品後・出荷前の法令適合レイヤー（US / Japan / Germany）

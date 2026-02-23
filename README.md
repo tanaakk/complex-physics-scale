@@ -6,11 +6,13 @@ A comprehensive framework for scaling hardware that integrates complex physical 
 
 - [universal-guideline](https://github.com/tanaakk/universal-guideline) のローカル適用として、**ハードウェアコーディング**に利用する。
 - `tanaakk-universal-schema.mdc` および `tanaakk-mes-manufacturing.mdc` と併用すること。
+- **5 層メタフレームワーク**の第 3 層（系の成立パターンのスクリーニング）に位置する。詳細は `00_Meta_Framework.md` を参照。
 
 ## 構成
 
 | ファイル | 説明 |
 |---------|------|
+| `00_Meta_Framework.md` | 5 層メタフレームワーク（空間基底→散逸機構→本フレームワーク→残存・拡張→特異点突破） |
 | `.cursorrules` | Cursor 用メインルール（全ファイル適用） |
 | `.cursor/rules/tanaakk-complex-physics-scale.mdc` | ルール要約（alwaysApply） |
 | `00_Screening.md` | 力学スクリーニング + Cross Industry Screening（3 段階フロー） |
