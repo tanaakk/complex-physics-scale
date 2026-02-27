@@ -12,8 +12,8 @@
 [1. 力学スクリーニング] → [2. Cross Industry Screening] → [3. 本ドキュメント: 法令・国際規格の参照]
 ```
 
-- **力学スクリーニング**（`00_Screening.md` § 適用ドメイン）で適用物理ドメインを確定する。
-- **Cross Industry Screening**（`00_Screening.md` § Cross Industry Screening）で産業種別を確定する。
+- **力学スクリーニング**（`01_Screening.md` § 適用ドメイン）で適用物理ドメインを確定する。
+- **Cross Industry Screening**（`01_Screening.md` § Cross Industry Screening）で産業種別を確定する。
 - 上記完了後、本ドキュメントおよび産業別の追加法令・国際規格を参照する。
 
 ---
@@ -161,7 +161,7 @@
 
 ## 5. プロジェクトでの設定
 
-`00_Screening.md` またはプロジェクト設定で、**出荷対象地域**を明示すること。
+`01_Screening.md` またはプロジェクト設定で、**出荷対象地域**を明示すること。
 
 | 項目 | 値 |
 |-----|-----|

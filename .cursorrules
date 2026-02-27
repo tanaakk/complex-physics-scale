@@ -28,14 +28,14 @@
 
 ### 1.1 力学スクリーニング（第 1 段階）
 
-- `00_Screening.md` の適用ドメイン（E/M/T/F）を参照する。
+- `01_Screening.md` の適用ドメイン（E/M/T/F）を参照する。
 - **適用外ドメインの提案に対しては警告を出す**。
-  - 例: 車載 IoT プロジェクトで Aerodynamics（空力）のコードやドキュメントが提案された場合 → 「本プロジェクトの 00_Screening.md によると Aerodynamics は適用外です。この変更は意図的ですか？」と警告する。
-- ドメインの追加・変更が必要な場合は、`00_Screening.md` の更新を促す。
+  - 例: 車載 IoT プロジェクトで Aerodynamics（空力）のコードやドキュメントが提案された場合 → 「本プロジェクトの 01_Screening.md によると Aerodynamics は適用外です。この変更は意図的ですか？」と警告する。
+- ドメインの追加・変更が必要な場合は、`01_Screening.md` の更新を促す。
 
 ### 1.2 Cross Industry Screening（第 2 段階）
 
-- `00_Screening.md` § Cross Industry Screening で産業種別（EV / スマートフォン / ロケット等）を特定する。
+- `01_Screening.md` § Cross Industry Screening で産業種別（EV / スマートフォン / ロケット等）を特定する。
 - 産業別の追加ドメイン・追加要件を適用する。
 
 ### 1.3 法令・国際規格の参照（第 3 段階）
@@ -220,7 +220,7 @@
 ## 参照ファイル
 
 - `00_Meta_Framework.md` — 5 層メタフレームワーク（本フレームワークの上位階層）
-- `00_Screening.md` — 力学スクリーニング + Cross Industry Screening（必須参照）
+- `01_Screening.md` — 力学スクリーニング + Cross Industry Screening（必須参照）
 - `01_Hardware_Mass_Production_Model.md` — PLOG / P&L / Competitive Margin / DFP の量産モデル体系
 - `02_Regulatory_Compliance_US_JP_DE.md` — 検品後・出荷前の法令適合レイヤー（US / Japan / Germany）
 - `03_Verification_Checklist.md` — 力学・用途・BOM・テストケース・テスト計測器・許認可の定義完了検証

@@ -11,7 +11,7 @@ Electronics (E)、Mechanics (M)、Thermodynamics (T)、Fluids (F) の4ドメイ�
 
 ## 1. Screening（3 段階・順序厳守）
 
-1. **力学スクリーニング**: `00_Screening.md` で適用ドメイン（E/M/T/F）を確定。適用外ドメインには**警告**。
+1. **力学スクリーニング**: `01_Screening.md` で適用ドメイン（E/M/T/F）を確定。適用外ドメインには**警告**。
 2. **Cross Industry Screening**: 産業種別（EV / スマートフォン / ロケット等）を特定し、産業別追加要件を適用。
 3. **法令・国際規格**: 上記完了後に `02_Regulatory_Compliance_US_JP_DE.md` 等を参照。
 

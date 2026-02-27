@@ -38,7 +38,7 @@
 
 - **役割**: ローカルな秩序の形成において、**系の条件分岐**を規定する。
 - **内容**: 力学スクリーニング、Cross Industry Screening、設計依存カスケード、法令適合。
-- **参照**: [complex-physics-scale](https://github.com/tanaakk/complex-physics-scale)（本リポジトリ、`00_Screening.md` 他）
+- **参照**: [complex-physics-scale](https://github.com/tanaakk/complex-physics-scale)（本リポジトリ、`01_Screening.md` 他）
 
 ### 4. 系の残存・拡張 (Law of Scale Verificator)
 
